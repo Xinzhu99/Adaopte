@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adaopte</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      sizes="any"
+      href="data:image/svg+xml, <svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐈</text></svg>"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script defer type="module" src="JS/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav>
+      <h2 id="logo">🐾Ada<span class="orange">opte</span></h2>
+      <a class="navLink" href="#"> <i data-lucide="house"></i>Accueil</a>                               <!--utiliser lucide pour les icones au lieu de svg-->
+      <a class="navLink" href="pages/search.html"><i data-lucide="bone"></i>J'adopte</a>
+      <a class="navLink" href="#"><i data-lucide="fish"></i>Guide de l'adoption</a>
+      <a class="navLink" href="pages/volunteer.html"><i data-lucide="squirrel"></i>Devenir bénévole</a>
+      <button id="navBtn" class="donation">Faire un don 🫶</button>
+    </nav>
+<!--partie bannière et bar de recherche-->
+    <section id="hero">
+      <div id="manifeste">
+        <h1>Donnons-leur autant qu'ils nous apportent</h1>
+        <p>
+          Chaque jour, des milliers d'animaux attendent une famille <br />
+          Trouvez votre compagnon idéal parmi nos animaux disponibles à
+          l'adoption.
+        </p>
+      </div>
+
+      <div class="search-Wrapper">
+        <form id="form" method="GET" action="pages/search.html">  <!-- pour switcher sur la page search avec la sumission du formulaire-->
+          <div id="selectPair">
+            <label for="type">Type d'animal</label>
+            <!--menu déroulant "select" avec un choix par défaut "Tout" le reste -->
+            <select id="type" name="type">
+              <option value="Tout">Tout</option>
+            </select>
+          </div>
+          <div id="inputPair">
+            <label for="city">Localisation</label>
+            <input id="city" name="city" placeholder="Votre ville">
+          </div>
+          <button id="research">Rechercher 🔎</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2>Nos animaux à adopter</h2>
+      <p>
+        Découvrez en images tous nos animaux qui attendent une famille aimante.
+        Chaque photo raconte une histoire et un espoir.
+      </p>
+      <div id="grid">
+        <div class="gridPic" id="animal1"></div>
+        <div class="gridPic" id="animal2"></div>
+        <div class="gridPic" id="animal3"></div>
+        <div class="gridPic" id="animal4"></div>
+        <div class="gridPic" id="animal5"></div>
+        <div class="gridPic" id="animal6"></div>
+        <div class="gridPic" id="animal7"></div>
+        <div class="gridPic" id="animal8"></div>
+      </div>
+      <button>Voir tous les animaux</button>
+    </section>
+
+    <section id="guide">
+      <h2>Comment ça marche</h2>
+      <p>
+        Adopter un animal est un engagement sérieux et à long terme. Voici notre
+        processus d'adoption en quelques étapes simples.
+      </p>
+      <div id="stepWrapper">
+        <div class="step">
+          <div class="stepIcon">🔍</div>
+          <h3 class="stepTitle">1. Trouvez votre compagnon</h3>
+          <p class="stepDetails">
+            Parcourez notre base de données d'animaux disponibles et utilisez
+            nos filtres pour trouver celui qui correspond à votre mode de vie.
+          </p>
+        </div>
+
+        <div class="step">
+          <div class="stepIcon">📝</div>
+          <h3 class="stepTitle">2. Remplissez une demande</h3>
+          <p class="stepDetails">
+            Soumettez votre formulaire d'adoption pour l'animal qui vous
+            intéresse. Nous examinons chaque demande avec soin.
+          </p>
+        </div>
+
+        <div class="step">
+          <div class="stepIcon">👋</div>
+          <h3 class="stepTitle">3. Rencontrez l'animal</h3>
+          <p class="stepDetails">
+            Visitez le refuge pour rencontrer l'animal et voir si vous êtes
+            compatibles. C'est une étape essentielle du processus.
+          </p>
+        </div>
+
+        <div class="step">
+          <div class="stepIcon">💞</div>
+          <h3 class="stepTitle">4. Bienvenue à la maison</h3>
+          <p class="stepDetails">
+            Une fois votre demande approuvée, vous pouvez accueillir votre
+            nouvel ami chez vous. Nous restons disponibles pour vous conseiller.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="cat">
+      <h2>Prêt⸱e à changer une vie ?</h2>
+      <p>
+        Adoptez, partagez, soutenez... Chaque geste compte. Que vous ouvriez
+        votre foyer ou votre coeur, <br />vous pouvez offrir une seconde chance
+        à un animal abandonné.
+      </p>
+      <div id="catBtn">
+        <button>Adopter un animal</button>
+        <button class="donation">Faire un don 🫶</button>
+        <button id="volunteer">Devenir bénévole</button>
+      </div>
+    </section>
+
+    <footer>
+      <div id="information">
+        <div class="info">
+          <h4>ADAOPTE</h4>
+          <p>
+            Notre mission est de trouver des foyers aimants pour chaque animal
+            abandonné et de promouvoir le bien-être animal.
+          </p>
+          <div id="icones">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-facebook-icon lucide-facebook">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg>
+            </a>
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-instagram-icon lucide-instagram">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+              </svg>
+            </a>
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-linkedin-icon lucide-linkedin">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect width="4" height="12" x="2" y="9" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-twitch-icon lucide-twitch">
+                <path d="M21 2H3v16h5v4l4-4h5l4-4V2zm-10 9V7m5 4V7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="info">
+          <h4>INOFRMATIONS UTILES</h4>
+          <a class="useful-link" href="">FAQs</a>
+          <a class="useful-link" href="">Conseils d'adoption</a>
+          <a class="useful-link" href="">Nous contacter</a>
+          <a class="useful-link" href="">Mentions légales</a>
+        </div>
+        <div class="info">
+          <h4>CONTACT</h4>
+          <p>
+            116 rue du Faubourg Saint-Martin <br />75010 Paris, France
+            <br />Email:contact@adaopte.fr <br />
+            Tel: +33 123 45 67
+          </p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© 2025 Adaence. Tous droits réservés.</p>
+        <p>
+          Ce site a été développé dans le cadre d'un projet pour ADA Tech
+          School.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>                                    <!--insérer le script de lucide pour utiliser les icones correctement-->
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+[
+  {
+    "name": "Charlie",
+    "age": "5 ans",
+    "breed": "Pug",
+    "type": "Chien",
+    "city": "Lille",
+    "zipcode": "59000",
+    "description": "Charlie est un petit chien calme et affectueux qui adore les balades tranquilles et les caresses sur le canapé.",
+   "emoji": "🐶"
+  },
+  {
+    "name": "Mia",
+    "age": "2 ans",
+    "breed": "Chat noir et blanc",
+    "type": "Chat",
+    "city": "Strasbourg",
+    "zipcode": "67000",
+    "description": "Mia est une boule de tendresse curieuse et joueuse, toujours prête à ronronner près de vous.",
+     "emoji": "🐱"
+
+  },
+  {
+    "name": "Coco",
+    "age": "1 an",
+    "breed": "Tortue",
+    "type": "Tortue",
+    "city": "Annecy",
+    "zipcode": "74000",
+    "description": "Coco est une petite tortue plein d’énergie, très doux et parfait pour un foyer aimant et paisible.",
+     "emoji": "🐢"
+  },
+  {
+    "name": "Rex",
+    "age": "4 ans",
+    "breed": "Chow-chow",
+    "type": "Chien",
+    "city": "Grenoble",
+    "zipcode": "38000",
+    "description": "Rex est un chien loyal et majestueux, idéal pour une personne douce et patiente qui aime les câlins silencieux.",
+     "emoji": ":dog:"
+  },
+  {
+    "name": "Luna",
+    "age": "3 ans",
+    "breed": "Chat Roux",
+    "type": "Chat",
+    "city": "Bordeaux",
+    "zipcode": "33000",
+    "description": "Luna adore les coins ensoleillés et les siestes à vos côtés. Elle vous offrira tout l’amour d’un regard félin.",
+   "emoji": ":cat:"
+  },
+  {
+    "name": "Biscuit",
+    "age": "3 mois",
+    "breed": "Cochon d'Inde",
+    "type": "Rongeur",
+    "city": "Tours",
+    "zipcode": "37000",
+    "description": "Biscuit est tout petit mais plein de vie ! Il aime les légumes croquants et les instants de douceur en famille.",
+    "emoji": ":hamster:"
+  },
+  {
+    "name": "Rio",
+    "age": "5 mois",
+    "breed": "Lapin nain brun",
+    "type": "Lapin",
+    "city": "Poitiers",
+    "zipcode": "86000",
+    "description": "Rio est discret, mignon comme tout, et adore explorer les petits coins de la maison avec délicatesse.",
+    "emoji": ":rabbit:"
+  },
+  {
+    "name": "Ruby",
+    "age": "2 ans",
+    "breed": "Chien Samoyed",
+    "type": "Chien",
+    "city": "Chamonix",
+    "zipcode": "74400",
+    "description": "Ruby est une boule de neige pleine d’amour ! Elle adore les promenades et les câlins par temps frais.",
+     "emoji": ":dog:"
+  }
+]

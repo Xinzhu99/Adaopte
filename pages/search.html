@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search</title>
+    <script defer type="module" src="../JS/search.js"></script>
+    <link rel="stylesheet" href="../CSS/search.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <nav>
+        <h2 id="logo">🐾Ada<span class="orange">opte</span></h2>
+        <a class="navLink" href="../index.html"> <i data-lucide="house"></i>Accueil</a>
+        <a class="navLink" href="search.html"><i data-lucide="bone"></i>J'adopte</a>
+        <a class="navLink" href="#"><i data-lucide="fish"></i>Guide de l'adoption</a>
+        <a class="navLink" href="/pages/volunteer.html"><i data-lucide="squirrel"></i>Devenir bénévole</a>
+        <button id="navBtn" class="donation">Faire un don 🫶</button>
+    </nav>
+    <div class="search-Wrapper">
+        <form id="form">
+          <div id="selectPair">
+              <label for="type">Type d'animal</label>
+              <select id="type" name="type">
+                  <option value="Tout">Tout</option>
+              </select>
+              <div id="message">Message</div>
+          </div>
+          <div id="inputPair">
+              <label for="city">Localisation</label>
+              <input id="city" name="city" placeholder="Votre ville">
+          </div>
+          <button id="research" >Rechercher 🔎</button>
+          </form>
+        </form>
+    </div>
+
+    <section id="cardsSection">
+        <div id="cardWrapper">
+            
+        </div>
+    </section>
+
+    <div id="pagination">
+        <a class="current" href="#">1</a>
+        <a href="">2</a>
+        <a href="">3</a>
+        <a href="">Suivant »</a>
+
+    </div>
+
+    <footer>
+      <div id="information">
+        <div class="info">
+          <h4>ADAOPTE</h4>
+          <p>
+            Notre mission est de trouver des foyers aimants pour chaque animal
+            abandonné et de promouvoir le bien-être animal.
+          </p>
+          <div id="icones">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-facebook-icon lucide-facebook">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg>
+            </a>
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-instagram-icon lucide-instagram">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+              </svg>
+            </a>
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-linkedin-icon lucide-linkedin">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect width="4" height="12" x="2" y="9" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-twitch-icon lucide-twitch">
+                <path d="M21 2H3v16h5v4l4-4h5l4-4V2zm-10 9V7m5 4V7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="info">
+          <h4>INOFRMATIONS UTILES</h4>
+          <a class="useful-link" href="">FAQs</a>
+          <a class="useful-link" href="">Conseils d'adoption</a>
+          <a class="useful-link" href="">Nous contacter</a>
+          <a class="useful-link" href="">Mentions légales</a>
+        </div>
+        <div class="info">
+          <h4>CONTACT</h4>
+          <p>
+            116 rue du Faubourg Saint-Martin <br />75010 Paris, France
+            <br />Email:contact@adaopte.fr <br />
+            Tel: +33 123 45 67
+          </p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© 2025 Adaence. Tous droits réservés.</p>
+        <p>
+          Ce site a été développé dans le cadre d'un projet pour ADA Tech
+          School.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+
+</body>
+</html>
