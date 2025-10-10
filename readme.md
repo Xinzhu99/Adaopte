@@ -1,7 +1,7 @@
-### 🐱 Adaopte 
+# 🐱 Adaopte 
 ## site d'adoption des animaux 
----
-## ✨ Fonctionnalités principales
+
+### ✨ Fonctionnalités principales
 
 - 🔍 **Recherche dynamique d’animaux** par type et par ville  
   → Le filtrage se fait automatiquement à partir des paramètres d’URL (`URLSearchParams`).
